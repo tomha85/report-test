@@ -1,0 +1,42 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "name": "myblob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "report-upload/{name}",
+      "connection": "blob_connection"
+    },
+    
+    {
+      "type": "blob",
+      "name": "outputBlob1",
+      "path": "report-encrypted/DTE/{name}.pgp",
+      "direction": "out",
+      "connection": "blob_connection"
+    },
+    {
+      "type": "blob",
+      "name": "outputBlob2",
+      "path": "report-encrypted/XCEL/{name}.pgp",
+      "direction": "out",
+      "connection": "blob_connection"
+    },
+    {
+      "type": "blob",
+      "name": "outputBlob3",
+      "path": "report-encrypted/SMUD/{name}.pgp",
+      "direction": "out",
+      "connection": "blob_connection"
+    },
+    {
+      "type": "blob",
+      "name": "outputBlob4",
+      "path": "report-encrypted/NationalGrid/{name}.pgp",
+      "direction": "out",
+      "connection": "blob_connection"
+    }
+
+  ]
+}
